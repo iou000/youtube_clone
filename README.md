@@ -1,4 +1,3 @@
-프로젝트용 React Template입니다.
+react.js
 
-
-cp -R 명령어로 복사하면 됩니다.
+youtube clone 프로젝트
