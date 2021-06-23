@@ -1,7 +1,7 @@
 .container {
   max-width: 320px;
   padding: 0.2em;
-  border: 1px solid lightgray;
+  border: 1px solid rgb(133, 133, 133);
   transition: transform 150ms ease-in;
 }
 
@@ -31,7 +31,11 @@
   margin: 0;
 }
 
+.title {
+  color: #ffffff;
+}
+
 .channel {
   font-size: 0.8rem;
-  color: darkgray;
+  color: #aaaaaa;
 }

@@ -1,0 +1,115 @@
+.header {
+  background-color: #212121;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+  padding: 0 16px;
+}
+
+.start {
+  display: flex;
+  align-items: center;
+}
+
+.hamburger {
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  border: none;
+  background: none;
+  color: whitesmoke;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.logo {
+  width: 2rem;
+  padding-left: 1em;
+  padding-right: 0.2em;
+  cursor: pointer;
+}
+
+.title {
+  font-weight: 450;
+  font-size: 1.5rem;
+  letter-spacing: -0.12rem;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+.start {
+  display: flex;
+  margin-right: 3em;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.input {
+  flex-basis: 100%;
+  border: solid 1px #ffffff14;
+  border-radius: 2px 0 0 2px;
+  background: #101010;
+  height: 1.9rem;
+  font-size: 1em;
+  color: whitesmoke;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #1263cc;
+  color: whitesmoke;
+}
+
+.searchBtn {
+  border: none;
+  border-radius: 0 2px 2px 0;
+  background: #ffffff14;
+  width: 4.5rem;
+  height: 1.9rem;
+  cursor: pointer;
+}
+
+.searchIcon {
+  width: 0.95em;
+  height: 0.95em;
+}
+
+.microphoneImg {
+  padding: 0.6em;
+}
+
+.end {
+  min-width: 215px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.videoImg,
+.bellImg,
+.app_menuImg,
+.profileImg,
+.microphoneImg,
+.hamburgerImg {
+  filter: brightness(0) invert(1);
+  width: 1.3rem;
+  height: 1.3rem;
+  cursor: pointer;
+}
+
+.app_menuImg {
+  width: 1rem;
+  height: 1rem;
+}
+
+.profileImg {
+  width: 1.8rem;
+  height: 1.8rem;
+}
