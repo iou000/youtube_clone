@@ -1,4 +1,4 @@
-.videos {
+.videos.grid {
   background-color: rgb(18, 18, 18);
   display: flex;
   flex-wrap: wrap;
@@ -7,5 +7,18 @@
   padding-top: 2rem;
   padding-bottom: 2rem;
   padding-left: 0;
+  margin: 0;
+}
+.videos.list {
+  background-color: rgb(18, 18, 18);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  list-style: none;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 26px;
+  width: 426px;
   margin: 0;
 }
