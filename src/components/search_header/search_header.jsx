@@ -1,7 +1,7 @@
-import React, { useRef } from 'react';
+import React, { memo, useRef } from 'react';
 import styles from './search_header.module.css';
 
-const Search_header = (props) => {
+const SearchHeader = memo((props) => {
 
         const inputRef = useRef(); //input에서 value가져오려고 씀.
 
@@ -49,6 +49,6 @@ const Search_header = (props) => {
 
 
         );
-};
+});
 
-export default Search_header;
+export default SearchHeader;

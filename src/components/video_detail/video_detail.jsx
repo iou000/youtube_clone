@@ -12,6 +12,7 @@ const VideoDetail = (props) => {
           className={styles.video}
           type="text/html" 
           src={`https://www.youtube.com/embed/${props.video.id}`}
+          title = "youtube video player"
           frameBorder="0"
           allowFullScreen>
         </iframe>

@@ -1,6 +1,6 @@
-import React, { useEffect, useState }from 'react';
+import React, { useCallback, useEffect, useState }from 'react';
 import styles from './app.module.css';
-import Search_header from './components/search_header/search_header';
+import SearchHeader from './components/search_header/search_header';
 import VideoDetail from './components/video_detail/video_detail';
 import VideoList from './components/video_list/video_list';
 
@@ -8,28 +8,28 @@ function App({ youtubeService }) {
   const[videos, setVideos] = useState([]);
   const[selectedVideo, setSelectedVideo] = useState(null);
   
-  const selectVideo = (video) => {
+  const selectVideo = useCallback((video) => {
     setSelectedVideo(video);
-  }
+  },[]);
 
-  const search = (query) => {
+  const search = useCallback((query) => {
     setSelectedVideo(null);
     youtubeService.searchVideos(query)
     .then(videos => setVideos(videos));
 
-  }
+  },[youtubeService]);
 
   useEffect(() => {
     youtubeService.mostPopular()
     .then(videos => setVideos(videos));
-  },[]);
+  },[youtubeService]);
 
 
 
 
   return (
     <div className={styles.app}>
-    <Search_header onSearch={search}/>
+    <SearchHeader onSearch={search}/>
     <section className={styles.content}>
       { selectedVideo && (
         <div className={styles.detail}>
