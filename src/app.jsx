@@ -19,6 +19,12 @@ function App({ youtubeService }) {
 
   },[youtubeService]);
 
+  const backHome = () => {
+    setSelectedVideo(null);
+    youtubeService.mostPopular()
+    .then(videos => setVideos(videos));
+  }
+
   useEffect(() => {
     youtubeService.mostPopular()
     .then(videos => setVideos(videos));
@@ -29,7 +35,7 @@ function App({ youtubeService }) {
 
   return (
     <div className={styles.app}>
-    <SearchHeader onSearch={search}/>
+    <SearchHeader onSearch={search} onLogoClick={backHome}/>
     <section className={styles.content}>
       { selectedVideo && (
         <div className={styles.detail}>

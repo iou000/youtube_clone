@@ -26,8 +26,10 @@ const SearchHeader = memo((props) => {
                         <button className={styles.hamburger}>
                                 <img className={styles.hamburgerImg}src="/images/hamburger.png" alt="hamburger" />        
                         </button>
-                        <img className={styles.logo} src="/images/logo.png" alt="logo" />
+                        <span className={styles.youtube} onClick={props.onLogoClick}>
+                        <img className={styles.logo} src="/images/logo.png" alt="logo"/>
                         <h1 className={styles.title} >YouTube</h1>
+                        </span>
                     </div>
                         
                     <div className={styles.center}>
@@ -39,6 +41,7 @@ const SearchHeader = memo((props) => {
                     </div>
 
                     <div className={styles.end}>
+                        <img className={styles.searchImg}src="/images/search.png" alt="searchImg" />
                         <img className={styles.videoImg}src="/images/video.png" alt="video" />
                         <img className={styles.app_menuImg}src="/images/app_menu.png" alt="app_menu" />
                         <img className={styles.bellImg}src="/images/bell.png" alt="bell" />

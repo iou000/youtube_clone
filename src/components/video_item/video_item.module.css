@@ -1,8 +1,6 @@
 .container.grid {
   max-width: 320px;
   padding: 0.2em;
-  border: 1px solid rgb(133, 133, 133);
-  transition: transform 150ms ease-in;
 }
 .title,
 .channel {
@@ -14,11 +12,6 @@
   flex-direction: column;
   align-items: center;
   cursor: pointer;
-}
-
-.container.grid:hover {
-  transform: scale(1.015);
-  box-shadow: 3px 3px 5px 0px rgba(191, 191, 191, 0.53);
 }
 
 .thumbnail.grid {
@@ -44,12 +37,6 @@
 .container.list {
   width: 426px;
   padding: 0.2em;
-  border: 1px solid rgb(133, 133, 133);
-  transition: transform 150ms ease-in;
-}
-
-.container.list:hover {
-  transform: scale(1.015);
 }
 
 .video.list {
@@ -95,4 +82,11 @@
 .channel {
   font-size: 0.8rem;
   color: #aaaaaa;
+}
+
+@media screen and (max-width: 64rem) {
+  .container.list {
+    width: 100%;
+    margin: 0 1rem;
+  }
 }

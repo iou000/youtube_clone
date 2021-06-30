@@ -22,3 +22,10 @@
   width: 426px;
   margin: 0;
 }
+
+@media screen and (max-width: 64rem) {
+  .videos.list {
+    width: 100%;
+    padding: 0;
+  }
+}

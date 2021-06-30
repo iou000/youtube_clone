@@ -23,6 +23,11 @@
   cursor: pointer;
 }
 
+.youtube {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
   width: 2rem;
   padding-left: 1em;
@@ -51,6 +56,7 @@
 
 .input {
   flex-basis: 100%;
+  width: 100%;
   border: solid 1px #ffffff14;
   border-radius: 2px 0 0 2px;
   background: #101010;
@@ -97,11 +103,18 @@
 .app_menuImg,
 .profileImg,
 .microphoneImg,
-.hamburgerImg {
+.hamburgerImg,
+.searchImg {
   filter: brightness(0) invert(1);
   width: 1.3rem;
   height: 1.3rem;
   cursor: pointer;
+}
+
+.searchImg {
+  width: 1.1rem;
+  height: 1.1rem;
+  display: none;
 }
 
 .app_menuImg {
@@ -112,4 +125,23 @@
 .profileImg {
   width: 1.8rem;
   height: 1.8rem;
+}
+
+@media screen and (max-width: 42rem) {
+  .center {
+    justify-content: flex-end;
+  }
+
+  .input,
+  .searchBtn {
+    display: none;
+  }
+
+  .microphoneImg {
+    padding-right: 0;
+  }
+
+  .searchImg {
+    display: block;
+  }
 }
