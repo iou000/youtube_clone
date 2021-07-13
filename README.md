@@ -6,6 +6,8 @@ youtube data api를 활용한 유튜브 사이트 클론 프로젝트
 
 yarn start
 
+
+## UI
 초기화면
 ![Untitled](https://user-images.githubusercontent.com/68727627/125381618-33b27180-e3cf-11eb-868c-4b982d79d9bf.png)
 
