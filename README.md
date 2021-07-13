@@ -8,6 +8,7 @@ yarn start
 
 초기화면
 ![Untitled](https://user-images.githubusercontent.com/68727627/125381618-33b27180-e3cf-11eb-868c-4b982d79d9bf.png)
+
 검색기능
 ![Untitled](https://user-images.githubusercontent.com/68727627/125381732-60668900-e3cf-11eb-9e9c-9ab8fa7601fc.png)
 
