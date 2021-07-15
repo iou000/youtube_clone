@@ -2,6 +2,8 @@
 
 youtube data api를 활용한 유튜브 사이트 클론 프로젝트
 
+사이트 주소 : https://seop-youtube-clone.netlify.app
+
 ## 실행 명령어
 
 yarn start
