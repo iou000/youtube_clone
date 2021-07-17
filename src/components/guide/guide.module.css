@@ -1,0 +1,35 @@
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.asideBtns {
+  display: flex;
+  flex-direction: column;
+}
+
+.asideBtn {
+  display: flex;
+  flex-direction: column;
+  width: 2rem;
+  align-items: center;
+  padding: 1rem;
+  cursor: pointer;
+}
+.asideBtn:hover {
+  background-color: #252525;
+}
+
+.imgName {
+  font-size: 0.6em;
+  padding-top: 0.8em;
+}
+
+.homeImg,
+.compassImg,
+.subscribeImg,
+.folderImg {
+  filter: brightness(0) invert(1);
+  width: 1.3rem;
+  height: 1.3rem;
+}

@@ -1,5 +1,6 @@
 import React, { useCallback, useEffect, useState }from 'react';
 import styles from './app.module.css';
+import Guide from './components/guide/guide';
 import SearchHeader from './components/search_header/search_header';
 import VideoDetail from './components/video_detail/video_detail';
 import VideoList from './components/video_list/video_list';
@@ -37,11 +38,16 @@ function App({ youtubeService }) {
     <div className={styles.app}>
     <SearchHeader onSearch={search} onLogoClick={backHome}/>
     <section className={styles.content}>
-      { selectedVideo && (
-        <div className={styles.detail}>
-          <VideoDetail video={selectedVideo} />
-        </div>
-      )}
+      { selectedVideo 
+          ? (
+              <div className={styles.detail}>
+                <VideoDetail video={selectedVideo} />
+              </div>)
+          : (
+              <aside className={styles.guide}>
+                <Guide />
+              </aside>)
+      }
       <div className={styles.list}>
         <VideoList videos={videos} onVideoClick={selectVideo} display={selectedVideo ? 'list' : 'grid'}/>
       </div>

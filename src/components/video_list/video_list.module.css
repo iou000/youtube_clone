@@ -4,10 +4,10 @@
   flex-wrap: wrap;
   justify-content: center;
   list-style: none;
-  padding-top: 2rem;
   padding-bottom: 2rem;
   padding-left: 0;
-  margin: 0;
+  margin-left: 3.5rem;
+  margin-top: 4rem;
 }
 .videos.list {
   background-color: rgb(18, 18, 18);
@@ -18,9 +18,8 @@
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 1rem;
-  padding-right: 26px;
-  width: 426px;
-  margin: 0;
+  width: 26.625rem;
+  margin-top: 3.5rem;
 }
 
 @media screen and (max-width: 64rem) {
